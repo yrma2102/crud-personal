@@ -4,4 +4,4 @@ RUN apk add --no-cache python2 g++ make
 WORKDIR /app
 COPY . .
 RUN yarn install --production
-CMD ["nodemon", "src/index.js"]
+CMD ["node", "src/index.js"]
